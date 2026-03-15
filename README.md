@@ -68,9 +68,9 @@ Claude will guide you through the process step by step.
 
 | Audience | Focus | Priority |
 |----------|-------|----------|
-| **CEO / Executive** | Business impact, user growth, revenue, cost savings | Products driving growth > Cost reduction > New launches > Infrastructure |
-| **Tech Lead / Eng Manager** | Technical depth + business impact | Complex challenges > Architecture > Code quality > DevOps > Mentoring |
-| **HR / General** | Role responsibilities, growth, collaboration | Org impact > Collaboration > Growth > Process > Initiative |
+| **Non-technical Manager** (CEO, COO, PM) | Business impact, user growth, revenue, cost savings | Products driving growth > Cost reduction > New launches > Infrastructure |
+| **Tech Lead** (EM, CTO, Senior Engineer) | Technical depth + business impact | Complex challenges > Architecture > Code quality > DevOps > Mentoring |
+| **HR** | Role responsibilities, growth, collaboration | Org impact > Collaboration > Growth > Process > Initiative |
 
 ## License
 

@@ -34,9 +34,9 @@ This skill generates a structured P-Review by:
    - Git email: `git config user.email`
 
 2. **Ask**: "Who will read this review?" (AskUserQuestion with options)
-   - **CEO / Executive** — Focus on business impact, revenue, user growth, strategic value. Minimize technical details.
-   - **Tech Lead / Engineering Manager** — Balance business impact with technical depth. Include architecture decisions, tech stack choices, code quality improvements.
-   - **HR / General** — Focus on role responsibilities, growth, collaboration, and measurable outcomes. Keep language accessible.
+   - **Non-technical Manager** (e.g., CEO, COO, Product Manager) — Focus on business impact, revenue, user growth, strategic value. Minimize technical details.
+   - **Tech Lead** (e.g., Engineering Manager, CTO, Senior Engineer) — Balance business impact with technical depth. Include architecture decisions, tech stack choices, code quality improvements.
+   - **HR** — Focus on role responsibilities, growth, collaboration, and measurable outcomes. Keep language accessible.
 
 3. **Ask**: "What year is this review for, and what is your name, department, and manager's name?" (single AskUserQuestion, free-text via "Other")
 
@@ -88,9 +88,9 @@ After gathering all data:
 
 3. **Based on audience, ask ONE more targeted question:**
 
-   - **If CEO / Executive**: "For each product, do you have any business metrics? (e.g., user counts, revenue impact, cost savings, growth rates)"
-   - **If Tech Lead / Engineering Manager**: "For each product, do you have any technical metrics? (e.g., test coverage, uptime, performance improvements, incidents prevented)"
-   - **If HR / General**: "Can you share examples of cross-team collaboration or professional development activities this year?"
+   - **If Non-technical Manager**: "For each product, do you have any business metrics? (e.g., user counts, revenue impact, cost savings, growth rates)"
+   - **If Tech Lead**: "For each product, do you have any technical metrics? (e.g., test coverage, uptime, performance improvements, incidents prevented)"
+   - **If HR**: "Can you share examples of cross-team collaboration or professional development activities this year?"
 
 Then proceed to Step 5.
 
@@ -138,21 +138,21 @@ Output the review in the following format. **All output must be in English.**
 
 The order of projects in Q1 and accomplishments in Q2 MUST reflect what the target audience values most.
 
-### CEO / Executive — Priority Order:
+### Non-technical Manager — Priority Order:
 1. Products/features that drove user growth, revenue, or market expansion
 2. Work that reduced costs or improved operational efficiency
 3. Products launched from zero to production (new business capabilities)
 4. Infrastructure that enabled faster delivery or business continuity
 5. Internal tools that improved team productivity
 
-### Tech Lead / Engineering Manager — Priority Order:
+### Tech Lead — Priority Order:
 1. Complex technical challenges solved (architecture, scalability, performance)
 2. Systems built from scratch demonstrating strong engineering decisions
 3. Code quality improvements (testing, refactoring, technical debt reduction)
 4. DevOps/infrastructure that improved developer experience or reliability
 5. Technical mentoring, code reviews, or knowledge sharing
 
-### HR / General — Priority Order:
+### HR — Priority Order:
 1. Projects with the broadest organizational impact
 2. Cross-functional collaboration and teamwork examples
 3. Professional growth demonstrated through new responsibilities
@@ -165,7 +165,7 @@ The order of projects in Q1 and accomplishments in Q2 MUST reflect what the targ
 
 ### Tone by Audience
 
-#### If audience is CEO / Executive:
+#### If audience is Non-technical Manager:
 - **Tone**: Professional, confident, impact-focused
 - **Technical depth**: Minimal — translate everything into business outcomes
 - **Key Task**: Describe WHAT was built/delivered, not HOW
@@ -173,7 +173,7 @@ The order of projects in Q1 and accomplishments in Q2 MUST reflect what the targ
 - **Q2 Narrative**: Connect work to company strategy and growth goals
 - **Avoid**: Framework names, library names, architecture patterns, PR/commit counts
 
-#### If audience is Tech Lead / Engineering Manager:
+#### If audience is Tech Lead:
 - **Tone**: Professional, technically informed, impact-aware
 - **Technical depth**: Moderate — include architecture decisions, tech choices, and engineering quality
 - **Key Task**: Include both what was built AND key technical decisions (e.g., tech stack, patterns used, testing approach)
@@ -181,7 +181,7 @@ The order of projects in Q1 and accomplishments in Q2 MUST reflect what the targ
 - **Q2 Narrative**: Highlight technical leadership, code quality, architecture decisions, and mentoring
 - **Include**: Tech stack, testing strategy, performance improvements, technical debt reduction
 
-#### If audience is HR / General:
+#### If audience is HR:
 - **Tone**: Professional, accessible, growth-oriented
 - **Technical depth**: Minimal — focus on role, responsibilities, and outcomes
 - **Key Task**: Describe responsibilities and scope in plain language
@@ -202,14 +202,14 @@ The order of projects in Q1 and accomplishments in Q2 MUST reflect what the targ
 
 ## Examples
 
-### Example for CEO / Executive audience:
+### Example for Non-technical Manager audience:
 
 | No | Product | Project | Key Task | Key Accomplishment | Priority |
 |----|---------|---------|----------|--------------------|----------|
 | 1 | **Product A** | **Full-stack Development** | Designed and built an AI-powered financial advisor from scratch — both backend and user-facing web app. Features include budget management, goal tracking, and AI conversations. | Since launch, acquired **8,000+ users** (3,800+ authenticated) handling **1,000+ conversations/month**. Built from zero to production in under 6 months. | 1 |
 | 2 | **Product B** | **CI/CD Migration** | Migrated build pipelines from a paid CI service to GitHub Actions for mobile app releases. | **Saves $100+/month** in build costs while improving deployment reliability and speed. | 2 |
 
-### Example for Tech Lead / Engineering Manager audience:
+### Example for Tech Lead audience:
 
 | No | Product | Project | Key Task | Key Accomplishment | Priority |
 |----|---------|---------|----------|--------------------|----------|
